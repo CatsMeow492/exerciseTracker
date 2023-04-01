@@ -27,12 +27,10 @@ connection.once('open', () => {
 
 // Define routes
 app.get('/', (req, res) => {
-  res.send('Welcome to Exercise Tracker API');
-});
-
-// Add more routes here
+    res.sendFile(__dirname + '/views/index.html')
+  });
 
 // Start the server
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
-});
+const listener = app.listen(process.env.PORT || 3000, () => {
+    console.log('Your app is listening on port ' + listener.address().port)
+  })
