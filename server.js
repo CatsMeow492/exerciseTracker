@@ -113,6 +113,16 @@ app.get('/api/users/:userId/logs', async (req, res) => {
     }
 });
 
+// Get all users
+app.get('/api/users', async (req, res) => {
+    try {
+        const users = await User.find();
+        res.json(users);
+    } catch (error) {
+        res.status(400).json('Error: ' + error);
+    }
+});
+
 // Start the server
 const listener = app.listen(process.env.PORT || 3000, () => {
     console.log('Your app is listening on port ' + listener.address().port)
