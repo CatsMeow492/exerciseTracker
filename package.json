@@ -13,7 +13,10 @@
   "keywords": [
     "FreeCodeCamp",
     "NodeJs",
-    "Backend"
+    "Backend",
+    "MongoDB",
+    "Mongoose",
+    "Express"
   ],
   "author": "Taylor Mohney",
   "license": "MIT",
