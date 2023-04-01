@@ -1,0 +1,31 @@
+{
+  "name": "exercisetracker",
+  "version": "1.0.0",
+  "description": "Exercise Tracker Project for FCC",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CatsMeow492/exerciseTracker.git"
+  },
+  "keywords": [
+    "FreeCodeCamp",
+    "NodeJs",
+    "Backend"
+  ],
+  "author": "Taylor Mohney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CatsMeow492/exerciseTracker/issues"
+  },
+  "homepage": "https://github.com/CatsMeow492/exerciseTracker#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  }
+}
